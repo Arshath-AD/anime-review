@@ -1,0 +1,328 @@
+/* #1E2761, #408EC6, #7A2048 */
+/* remove browser style */
+/*
+.playwrite-nl-guides-regular {
+  font-family: "Playwrite NL Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+/* temporary */
+/* ===================================================== */
+.Lorem {
+  color: white;
+}
+
+/* ===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 150;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: hsl(0, 0%, 13%);
+}
+
+.entire-page {
+  background-color: hsla(0, 0%, 6%, 0.897);
+  position: relative;
+  max-width: 1500px;
+  margin: auto;
+  min-width: 840px;
+  box-shadow: 0px 0px 20px white;
+}
+
+::selection {
+  color: hsl(0, 0%, 0%);
+  background-color: hsla(109, 100%, 61%, 0.785);
+  font-weight: bolder;
+}
+
+/* =============================================================================================== */
+
+/* Topbar */
+
+.top {
+  height: 3.9%;
+  width: 100%;
+}
+
+.top-child {
+  background-color: hsla(0, 0%, 0%, 0.686);
+  max-height: 300rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 0.4rem 0.9rem;
+  position: relative;
+}
+
+.logo- {
+  height: 100%;
+  width: 6%;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  /* box-shadow: 1px 1px 8px hsl(0, 0%, 29%); */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.logo:hover {
+  /* transform: translate(-1px, -1px); */
+  box-shadow: 0px 0px 20px hsl(125, 100%, 67%);
+}
+
+#pop-up {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  list-style: none;
+  color: white;
+}
+
+.pages {
+  height: 40%;
+  width: 16%;
+}
+
+#home-a,
+#setting-a {
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 2px 8px;
+  transition: all 0.6s ease; /* Apply transition to all properties */
+}
+
+#home-a:hover,
+#setting-a:hover {
+  color: hsl(120, 100%, 71%);
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+.orewa-nova {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-shadow: 0 0 5px hsl(110, 100%, 54%), 0 0 10px #68ff4d, 0 0 15px #2aff22,
+    0 0 20px #5bff3e;
+  margin-right: 9rem;
+}
+
+.orewa-nova:hover {
+  text-shadow: 0 0 10px hsl(110, 100%, 54%), 0 0 15px #68ff4d, 0 0 20px #2aff22,
+    0 0 25px #5bff3e;
+  cursor: pointer;
+}
+
+.search- {
+  height: 50%;
+  width: 27%;
+}
+
+.-search {
+  background-color: hsl(0, 0%, 25%);
+  color: aliceblue;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 3px 15px;
+  box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.-search:focus-visible {
+  outline: none;
+}
+
+/* ========================================================================================================== */
+
+/* index page: leaderboard */
+
+/* =============================================================================================== */
+.para {
+  padding: 4.5% 2%;
+}
+
+.board {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.learderboard {
+  height: 100%;
+  width: 100%;
+  min-width: 50rem;
+  background-color: hsla(0, 0%, 0%, 0.686);
+  padding: 10px 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(9);
+  margin: auto;
+}
+
+.top-10 {
+  height: auto;
+  width: 95%;
+  padding: 20px 35px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin: auto;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: transform 0.4s linear;
+  margin-right: 2%;
+}
+
+.top-content:hover {
+  transform: scale(1.08);
+}
+
+.top-i {
+  width: 8%;
+  border-radius: 250px;
+  height: 53rem;
+  max-height: 3.5rem;
+}
+
+.top-p {
+  font-size: 93%;
+  max-height: 4rem;
+  overflow: hidden;
+  color: hsl(0, 0%, 100%);
+  padding: 2% 2%;
+}
+
+.top-name {
+  font-weight: 300;
+  color: hsl(120, 100%, 69%);
+}
+
+.top-pn {
+  position: relative;
+  background-color: hsla(0, 0%, 0%, 0.712);
+  border-radius: 20px;
+  width: 88%;
+}
+
+.top-n {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  background-color: hsla(0, 0%, 80%, 1);
+  bottom: 82%;
+  left: 94%;
+  width: 40px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: -2px 3px 10px black;
+}
+
+#n1 {
+  background-color: hsla(210, 100%, 50%, 1);
+}
+
+#n2 {
+  background-color: hsla(30, 100%, 50%, 1);
+}
+
+#n3 {
+  background-color: hsla(120, 100%, 50%, 1);
+}
+
+/* ======================================================================================================= */
+
+.parent-random-anime {
+  /* background-color: yellow; */
+  padding: 3rem 1rem;
+}
+
+.random-anime {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Grid items */
+.ani-item {
+  background-color: hsla(0, 0%, 0%, 0.686);
+  height: 19rem;
+  max-height: 19rem;
+  padding: 0.9rem;
+  display: none;
+  border-radius: 5px;
+  align-items: center;
+  transition: transform 0.8s ease;
+}
+
+.ani-item:hover {
+  transform: scale(1.07);
+}
+
+/* Displayed items will be visible */
+/* for JS */
+.show {
+  display: block;
+}
+
+/* ============ */
+/* for grid contents */
+.RA-i {
+  max-width: 15rem;
+  max-height: 10rem;
+  background-color: #2aff22;
+  min-width: 22.5rem;
+  min-height: 12rem;
+  width: 15rem;
+  height: 10rem;
+}
+
+.RA-p {
+  color: white;
+  margin-top: 0.4rem;
+  font-size: 0.879em;
+}
+
+.A-link {
+  font-weight: 300;
+  color: hsl(120, 100%, 69%);
+}
+
+/* ===================================================================================================== */
+/* footer */
+footer {
+  background-color: hsla(0, 0%, 0%, 0.686);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+
+.foot {
+  color: white;
+}
+
+.right {
+  margin-top: 1.6rem;
+}
