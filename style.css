@@ -310,9 +310,9 @@ footer {
 
 /* =============================================================================================== */
 .top {
-  height: 3.9%;
+  height: 6%;
   width: 100%;
-  position: fixed;
+  position: relative;
   max-width: 93.7rem;
   min-width: 80rem;
 }
@@ -324,27 +324,25 @@ footer {
   display: flex;
   align-items: center;
   margin: auto;
-  padding: 0.4rem 0.9rem;
+  padding: 1.5rem 0.9rem;
   position: relative;
 }
 
-.logo- {
-  height: 100%;
-  width: 6%;
+.hleadboard {
+  background-color: hsla(0, 0%, 0%, 0.779);
+  color: hsl(120, 100%, 69%);
+  font-weight: bold;
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
+  border: solid 5px hsl(120, 100%, 69%);
+  border-radius: 5px;
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
 }
 
-.logo {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
-  cursor: pointer;
-  /* box-shadow: 1px 1px 8px hsl(0, 0%, 29%); */
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.logo:hover {
-  /* transform: translate(-1px, -1px); */
-  box-shadow: 0px 0px 20px hsl(125, 100%, 67%);
+.hleadboard:hover {
+  box-shadow: 5px 4px 1px black;
+  transform: translate(-1px, -2px);
 }
 
 #pop-up {
@@ -375,7 +373,7 @@ footer {
 #setting-a:hover {
   color: hsl(120, 100%, 71%);
   background-color: rgba(0, 0, 0, 0.4);
-  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 .orewa-nova {
@@ -420,27 +418,11 @@ footer {
 /* ======================================================================================================= */
 
 .home-content {
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 .anc-lead-h {
   text-decoration: none;
-}
-
-.hleadboard {
-  background-color: hsla(0, 0%, 0%, 0.779);
-  color: hsl(120, 100%, 69%);
-  font-weight: bold;
-  width: 6rem;
-  height: 2rem;
-  text-align: center;
-  border: solid 5px hsl(120, 100%, 69%);
-  border-radius: 5px;
-  transition: box-shadow 0.5s ease, transform 0.5s ease;
-}
-.hleadboard:hover {
-  box-shadow: 5px 4px 1px black;
-  transform: translate(-1px, -2px);
 }
 
 .welcome-div {
