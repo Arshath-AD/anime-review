@@ -10,8 +10,22 @@
       @import url("https://fonts.googleapis.com/css2?family=Playwrite+NL+Guides&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+NL+Guides&display=swap");
       </style>
+      <style>
+      .setting-page {
+      position: fixed;
+      padding: 2rem 8rem;
+      display: none;
+      top: 4.9rem;
+      }
+
+      .p1,.p2,.p3 {
+        display: none;
+
+      }
+    
+      </style>
   </head>
-  <body>
+  <body class="BG">
     <div class="entire-home">
       <header class="top">
         <div class="top-child">
@@ -25,8 +39,8 @@
               <li class="home">
                 <p id="home-a"><a id="home-a" href="#">login</a></p>
               </li>
-              <li class="setting">
-                <p id="setting-a">Settings</p>
+              <li onclick="settin_thing('setting-page')" class="setting">
+                <p  id="setting-a">Settings</p>
               </li>
             </ul>
           </div>
@@ -39,9 +53,25 @@
         </div>
       </header>
       <div class="home-content">
-        <div class="welcome-div">
-          <h1 class="welcome">Welcome</h1>
-          <p class="welcome-p">"Welcome to Anime Haven, your ultimate guide to discovering the best anime across various genres! Whether you're a fan of action-packed adventures, heartfelt romance, mind-bending thrillers, epic fantasy worlds, or supernatural showdowns, we've got something for everyone. Explore our curated lists, find your next favorite series, and immerse yourself in the vibrant world of anime. Start your journey today and experience the magic of storytelling like never before!"</p>
+        <div class="setting-page">
+          <div class="entire-setting">
+            <div class="events-parent">
+              <div class="event-selector">
+                <div onclick="page_selevtor('p1','p2','p3')" class="event"><h3 class="event-txt">General</h3></div>
+                <div onclick="page_selevtor('p2','p1','p3')" class="event"><h3 class="event-txt">about</h3></div>
+                <div onclick="page_selevtor('p3','p1','p2')" class="event"><h3 class="event-txt">EasterEggs</h3></div>
+              </div>
+              <div class="events">
+                <h2 class="events-txt">Settings</h2>
+                <div class="event-page p1">
+                  <p onclick="toggleDarkLightMode()" class="light">Light</p>
+                  <p onclick="toggleDarkLightMode()" class="dark">Dark</p>
+                </div>
+                <div class="event-page p2"><h1>About</h1></div>
+                <div class="event-page p3"><h1>EasterEggs</h1></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="partition">
           <h2 class="gesture G1">Action-Packed Adventures</h2>
@@ -283,7 +313,7 @@
             </div>
           </div>
         </div>
-        <footer>
+        <footer class="f-BG">
           <div class="left">
             <h4 class="foot">Copyrights Disclaimer</h4>
             <p class="foot">
@@ -299,5 +329,69 @@
           </div>
         </footer>
     </div>
+    <script>
+      function page_selevtor(p1,p2,p3) {
+        const page1 = document.querySelector(`.${p1}`);
+        const page2 = document.querySelector(`.${p2}`);
+        const page3 = document.querySelector(`.${p3}`);
+        
+        page1.style.display="block";
+        page2.style.display="none";
+        page3.style.display="none";
+        
+      }
+      function settin_thing(className) {
+        // Get the settings page element
+          const settingsPage = document.querySelector(".setting-page");
+          console.log(settingsPage)
+
+        // Toggle its visibility
+          if (settingsPage.style.display==='none') {
+            settingsPage.style.display='block';
+          }else{
+            settingsPage.style.display='none';
+      }
+      }
+      // function light(){
+      //   const foot_ground=document.querySelector(".f-BG");
+      //   const foot_=document.querySelector(".foot");
+      //   const back_ground=document.querySelector(".BG");
+      //   const dashboard=document.querySelector(".top-child");
+      //   const event_=document.querySelector(".event");
+      //   const events_=document.querySelector(".events");
+      //   const events_txt_=document.querySelector(".events-txt");
+        
+      //    // Change its background color to white
+
+      //   back_ground.style.backgroundColor = 'white';
+      //   foot_ground.style.backgroundColor = 'hsla(0, 0%, 74%, 0.686)';
+      //   foot_.style.color = 'black';
+      //   dashboard.style.backgroundColor = 'hsla(0,0%,0%,0.779)';
+      //   event_.style.color = 'hsl(0, 0%, 13%)';
+      //   event_.style.borderBottom = 'hsl(0, 0%, 13%)';
+      //   events_.style.borderLeftColor = 'hsl(0, 0%, 13%)';
+      //   events_txt_.style.color = "hsl(0, 0%, 13%);";
+
+      // }
+      function toggleDarkLightMode() {
+      const body = document.body;
+
+      // Toggle between light and dark modes
+      body.classList.toggle("light-mode");
+      body.classList.toggle("dark-mode");
+    }
+
+      // Call this function when the "Light" or "Dark" button is clicked
+      document.querySelector(".light").addEventListener("click", () => {
+        document.body.classList.add("light-mode");
+        document.body.classList.remove("dark-mode");
+      });
+
+      document.querySelector(".dark").addEventListener("click", () => {
+        document.body.classList.add("dark-mode");
+        document.body.classList.remove("light-mode");
+      });
+
+    </script>
   </body>
 </html>

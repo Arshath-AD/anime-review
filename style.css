@@ -15,6 +15,37 @@
   color: white;
 }
 
+/* Light Mode Styles */
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .f-BG {
+  background-color: hsl(0, 0%, 94%);
+}
+
+body.light-mode .top-child {
+  background-color: hsl(0, 0%, 90%);
+}
+
+body.light-mode .gesture {
+  border-color: hsl(0, 0%, 20%);
+}
+
+body.light-mode .event {
+  color: hsl(0, 0%, 20%);
+  border-bottom-color: hsl(0, 0%, 20%);
+}
+
+body.light-mode .events {
+  border-left-color: hsl(0, 0%, 20%);
+}
+
+body.light-mode .events-txt {
+  color: hsl(0, 0%, 20%);
+}
+
 /* ===================================================== */
 
 * {
@@ -73,15 +104,23 @@ body {
   border-radius: 3px;
 }
 
-.a-ihom,
-.a-iset {
+.a-ihom {
   text-decoration: none;
   color: aliceblue;
   transition: color 0.5s ease;
 }
 
-.a-ihom:hover,
-.a-iset:hover {
+.a-ihom:hover {
+  color: #2aff22;
+}
+
+#iset {
+  color: aliceblue;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+
+#iset:hover {
   color: #2aff22;
 }
 
@@ -114,6 +153,7 @@ body {
   width: 15rem;
   margin-bottom: 0.5rem;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .learderboard {
@@ -283,6 +323,7 @@ footer {
 
 .foot {
   color: white;
+  font-weight: 500;
 }
 
 .right {
@@ -353,6 +394,7 @@ footer {
   padding: 5px;
   list-style: none;
   color: white;
+  cursor: pointer;
 }
 
 .pages {
@@ -374,6 +416,7 @@ footer {
   color: hsl(120, 100%, 71%);
   background-color: rgba(0, 0, 0, 0.4);
   text-decoration: underline;
+  /* display: default; */
 }
 
 .orewa-nova {
@@ -419,6 +462,83 @@ footer {
 
 .home-content {
   padding-top: 4rem;
+}
+
+.events-parent {
+  background-color: hsla(0, 0%, 0%, 0.672);
+  height: 25rem;
+  width: 60rem;
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.event-selector {
+  /* background-color: red; */
+  width: 9rem;
+  height: 100%;
+  padding: 0.8rem;
+}
+
+.event {
+  /* background-color: blue; */
+  height: 10%;
+  width: 87%;
+  text-align: left;
+  border-bottom: solid 2px hsl(0, 0%, 47%);
+  cursor: pointer;
+  margin: 0.1rem auto;
+  color: hsl(0, 0%, 47%);
+}
+
+.event:hover {
+  background-color: hsla(0, 0%, 38%, 0.677);
+  border-radius: 0.5rem;
+}
+
+.event-txt {
+  font-weight: 900;
+  font-size: medium;
+}
+
+.events {
+  /* background-color: yellow; */
+  width: 95%;
+  height: 95%;
+  padding: 0.1rem;
+  position: relative;
+  overflow: scroll;
+  scrollbar-width: none;
+  margin: auto;
+  border-left: solid 2px hsl(0, 0%, 47%);
+}
+
+.events-txt {
+  color: hsl(0, 0%, 47%);
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+
+.event-page {
+  height: 95%;
+  width: 97.3%;
+  color: hsl(0, 0%, 47%);
+  position: absolute;
+  padding: 1rem;
+}
+
+.light,
+.dark {
+  font-weight: bold;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.light:hover,
+.dark:hover {
+  background-color: hsla(0, 0%, 38%, 0.677);
 }
 
 .anc-lead-h {
@@ -486,6 +606,7 @@ footer {
 
 .homie-p {
   color: white;
+  font-weight: 600;
   font-size: small;
 }
 

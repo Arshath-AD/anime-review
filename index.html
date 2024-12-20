@@ -10,6 +10,19 @@
       @import url("https://fonts.googleapis.com/css2?family=Playwrite+NL+Guides&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+NL+Guides&display=swap");
     </style>
+    <style>
+      .setting-page {
+      position: fixed;
+      padding: 2rem 8rem;
+      display: none;
+      top: 4.9rem;
+      }
+
+      .p1,.p2,.p3 {
+        display: none;
+
+      }
+    </style>
   </head>
   <body>
     <div class="entire-page">
@@ -17,18 +30,35 @@
         <ul class="pagesHS">
           <li class="homelink">
             <a class="a-ihom" href="./home.html">
-              <!-- <img id="ihom" src="./images/icons/home.png" alt="Home" /> -->
               <p id="ihom">Home</p>
             </a>
           </li>
           <li class="settinglink">
-            <a class="a-iset" href="./settings.html">
-              <!-- <img id="iset" src="./images/icons/setting.png" alt="settings" /> -->
-              <p id="iset">Setting</p>
-            </a>
+            <p onclick="settin_thing('setting-page')" id="iset">Setting</p>
           </li>
         </ul>
         <h1 class="orewa-nova homeON">Ore-Wa Nova</h1>
+        <div class="home-content">
+          <div class="setting-page">
+            <div class="entire-setting">
+              <div class="events-parent">
+                <div class="event-selector">
+                  <div onclick="page_selevtor('p1','p2','p3')" class="event"><h3 class="event-txt">General</h3></div>
+                  <div onclick="page_selevtor('p2','p1','p3')" class="event"><h3 class="event-txt">about</h3></div>
+                  <div onclick="page_selevtor('p3','p1','p2')" class="event"><h3 class="event-txt">EasterEggs</h3></div>
+                </div>
+                <div class="events">
+                  <h2 class="events-txt">Settings</h2>
+                  <div class="event-page p1">
+                    <p onclick="toggleDarkLightMode()" class="light">Light</p>
+                    <p onclick="toggleDarkLightMode()" class="dark">Dark</p>
+                  </div>
+                  <div class="event-page p2"><h1>About</h1></div>
+                  <div class="event-page p3"><h1>EasterEggs</h1></div>
+                </div>
+              </div>
+            </div>
+          </div>
       </header>
       <div class="para">
         <div class="board">
@@ -537,6 +567,30 @@
         </div>
       </footer>
       <script src="./app.js"></script>
+      <script>
+        function page_selevtor(pn1,pn2,pn3) {
+        const page1 = document.querySelector(`.${pn1}`);
+        const page2 = document.querySelector(`.${pn2}`);
+        const page3 = document.querySelector(`.${pn3}`);
+        
+        page1.style.display="block";
+        page2.style.display="none";
+        page3.style.display="none";
+        
+      }
+      function settin_thing(className) {
+        // Get the settings page element
+          const settingsPage = document.querySelector(".setting-page");
+          console.log(settingsPage)
+
+        // Toggle its visibility
+          if (settingsPage.style.display==='none') {
+            settingsPage.style.display='block';
+          }else{
+            settingsPage.style.display='none';
+      }
+      }
+      </script>
     </div>
   </body>
 </html>
