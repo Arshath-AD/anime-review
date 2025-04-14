@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/anime-page.css">
+    <title>review</title>
+    <style>
+      .setting-page {
+      padding: 5rem 10rem;
+      display: none;
+      top: 4.9rem;
+      z-index: 8;
+      width: 100%;
+      position: absolute;
+      }
+
+      .p2,.p3 {
+        display: none;
+
+      }
+    </style>
+  </head>
+  <body class="BG left">
+    <div class="entire-reviewpage">
+      <header class="top">
+        <div class="top-child">
+          <div class="logo-">
+            <a href="./index.html" class="anc-lead-h">
+              <p class="hleadboard">Leader Board</p>
+            </a>
+          </div>
+          
+          <div class="web-name">
+            <h2 class="orewa-nova AN">Ore-Wa Nova</h2>
+          </div>
+          <div class="pages">
+            <ul id="pop-up">
+              <li class="home">
+                <p id="home-a" onclick="window.location.href='./home.html'">
+                  Home
+                </p>
+              </li>
+              <li onclick="settin_thing('setting-page')" class="setting">
+                <p id="setting-a">Settings</p>
+              </li>
+            </ul>
+          </div>
+      </header>
+      <div class="setting-page">
+        <div class="entire-setting">
+          <div class="events-parent">
+            <div class="event-selector">
+              <div onclick="page_selevtor('p1','p2','p3')" class="event"><h3 class="event-txt">General</h3></div>
+              <div onclick="page_selevtor('p2','p1','p3')" class="event"><h3 class="event-txt">about</h3></div>
+              <div onclick="page_selevtor('p3','p1','p2')" class="event"><h3 class="event-txt">EasterEgg</h3></div>
+            </div>
+            <div class="events">
+              <h2 onclick="cross('setting-page')" class="cross-line-set">X</h2>
+              <h2 class="events-txt">SETTINGS</h2>
+              <div class="event-page p1">
+                <p  class="light">Light</p>
+                <p  class="dark">Dark</p>
+              </div>
+
+              <div class="event-page p2"><h1>About</h1></div>
+              <div class="event-page p3"><h1>EasterEgg</h1></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ani-page-content">
+        <div class="gesture-pop">
+          <button class="button-gesture" id="">></button>
+        </div>
+        <div class="reviewer">
+          <div class="rev-images">
+            <div class="lrev-img">
+              <button onclick="showPrevious('ap1','ap2','ap3','ap4','ap5','ap6')" id="prevBtn" class="buttonleft" ><</button>
+            </div>
+            <div class="slidebar">
+              <div class="imgsrev">
+                <img  class="img-rev ap1" src="../images/anime/Death-notej.jpg" alt="img1">
+                <img  class="img-rev ap2" src="../images/random-index/AOT.jpg" alt="img2">
+                <img  class="img-rev ap3" src="../images/anime/cowboy-bebop.jpg" alt="img3">
+                <img  class="img-rev ap4" src="../images/anime/monster.jpg" alt="img4">
+                <img  class="img-rev ap5" src="../images/anime/Hunterj.jpg" alt="img5">
+              </div>
+            </div>
+            <div class="rrev-img">
+              <button onclick="showNext('ap1','ap2','ap3','ap4','ap5','ap6')" id="nextBtn" class="buttonright">></button>
+            </div>
+          </div>
+          <div class="re-view">
+            <div class="title">
+              <div class="titlechild">
+                <h1>Attack On Titans</h1>
+
+              </div>
+            </div>
+            <div class="indexofA">
+              <div class="indexofAchild">
+                <div class="star-rating">
+                  <span class="star" data-value="1">&#9733;</span>
+                  <span class="star" data-value="2">&#9733;</span>
+                  <span class="star" data-value="3">&#9733;</span>
+                  <span class="star" data-value="4">&#9733;</span>
+                  <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <p>Attack on Titan (Shingeki no Kyojin) is a gripping action-fantasy anime set in a post-apocalyptic world where humanity is on the brink of extinction due to gigantic, man-eating Titans.<br/> <br/> The story follows Eren Yeager, along with his friends Mikasa and Armin, as they join the Scout Regiment to fight back against the Titans and uncover the dark secrets behind their existence.<br/><br/>Attack on Titan is widely praised for its animation, complex characters, and thought-provoking themes about freedom, survival, and morality.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="easter-eggs">
+            <h1>Suggestion</h1>
+            <div class="part-child-ARP">
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/naruto-classic.jpg" alt="Naruto">
+                <a class="A-hom-ARP-ARP" href="#"><p class="homie-p-ARP">Naruto</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/AOT.jpg" alt="Attack on Titan">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Attack on Titan</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Demon-slayer.jpg" alt="Demon Slayer">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Demon Slayer</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/ONE PIECE Egghead Arc.jpeg" alt="One Piece">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">One Piece</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/JJK.jpeg" alt="Jujutsu Kaisen">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Jujutsu Kaisen</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/MY-hero-acadamia.jpeg" alt="My Hero Academia">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">My Hero Academia</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/top-10/fullmental.png" alt="Fullmetal Alchemist: Brotherhood">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Fullmetal Alchemist</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Vinland Saga.jpeg" alt="Vinland Saga">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Vinland Saga</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/top-10/hunter.png" alt="Hunter x Hunter">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Hunter x Hunter</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Dr_Stone.jpeg" alt="Dr. Stone">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Dr. Stone</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/top-10/death-note.png" alt="Death Note">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Death Note</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Erased.jpeg" alt="Erased">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Erased</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Monster.jpeg" alt="Monster">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Monster</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/The Promised Neverland.jpeg" alt="The Promised Neverland">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">The Promised Neverland</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Psycho-Pass.jpeg" alt="Psycho-Pass">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Psycho-Pass</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Steins-Gate.jpeg" alt="Steins;Gate">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Steins;Gate</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Future Diary.jpeg" alt="Future Diary">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Future Diary</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Paranoia Agent.jpeg" alt="Paranoia Agent">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Paranoia Agent</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Ghost Hunt.jpeg" alt="Ghost Hunt">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Ghost Hunt</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Higurashi- When They Cry.jpeg" alt="Higurashi: When They Cry">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Higurashi: When They Cry</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/your lie in april.jpg" alt="Your Lie in April">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Your Lie in April</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/fruit basket.jpeg" alt="Fruits Basket">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Fruits Basket</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/clannad.jpg" alt="Clannad">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Clannad</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/toradora.png" alt="Toradora">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Toradora</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/horimiya.jpeg" alt="Horimiya">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Horimiya</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Kimi ni Todoke.jpeg" alt="Kimi ni Todoke">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Kimi ni Todoke</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/A Silent Voice.jpeg" alt="A Silent Voice">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">A Silent Voice</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Anohana-The Flower We Saw That Day.jpeg" alt="Anohana: The Flower We Saw That Day">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Anohana</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/The Quintessential Quintuplets.jpeg" alt="The Quintessential Quintuplets">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">The Quintessential Quintuplets</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Bunny Girl Senpai.jpeg" alt="Bunny Girl Senpai">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Bunny Girl Senpai</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Bleach.jpeg" alt="Bleach">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Bleach</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Tokyo Ghoul.jpeg" alt="Tokyo Ghoul">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Tokyo Ghoul</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Blue Exorcist.jpeg" alt="Blue Exorcist">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Blue Exorcist</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Noragami.jpeg" alt="Noragami">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Noragami</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Soul Eater.jpeg" alt="Soul Eater">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Soul Eater</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Shaman King.jpeg" alt="Shaman King">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Shaman King</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/D.Gray-man.jpeg" alt="D.Gray-man">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">D.Gray-man</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/The Devil is a Part-Timer.jpeg" alt="The Devil is a Part-Timer">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">The Devil is a Part-Timer</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Hellsing Ultimate.jpeg" alt="Hellsing Ultimate">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Hellsing Ultimate</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Black Butler.jpeg" alt="Black Butler">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Black Butler</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Re-Zero.jpeg" alt="Re:Zero">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Re:Zero</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Sword Art Online.jpeg" alt="Sword Art Online">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Sword Art Online</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/The Rising of the Shield Hero.jpeg" alt="The Rising of the Shield Hero">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">The Rising of the Shield Hero</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Made in Abyss.jpeg" alt="Made in Abyss">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Made in Abyss</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Black Clover.jpeg" alt="Black Clover">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Black Clover</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/No Game No Life.jpeg" alt="No Game No Life">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">No Game No Life</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Made in Abyss.jpeg" alt="Magi: The Labyrinth of Magic">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Magi: The Labyr<br>inth of Magic</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Log Horizon.jpeg" alt="Log Horizon">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Log Horizon</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/Fairy Tail.jpeg" alt="Fairy Tail">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Fairy Tail</p></a>
+              </div>
+              <div class="ani-con-ARP">
+                <img class="homie-i-ARP" src="../images/home-img/The Seven Deadly Sins.jpeg" alt="The Seven Deadly Sins">
+                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">The Seven Deadly Sins</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="ani-foot">
+        <div class="left">
+          <h3>CopyRights:</h3>
+          <a href="https://www.linkedin.com/in/arshath-ahamed-45b34830a/" target="_blank" >Linkedin</a>
+      </footer>
+      </div>
+    <script src="../JS/app.js">
+    </script>
+    <script src="../JS/anime-page.js"></script>
+  </body>
+</html>

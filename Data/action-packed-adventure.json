@@ -1,0 +1,67 @@
+[
+  {
+    "id": "AOT",
+    "title": "Attack on Titan",
+    "images": [
+      "..images/AOT1.jpg",
+      "..images/AOT2.jpg",
+      "..images/AOT3.jpg",
+      "..images/AOT4.jpg",
+      "..images/AOT5.jpg"
+    ],
+    "description": "A battle for humanity against terrifying Titans. Eren Yeager and his friends join the Survey Corps to uncover the secrets of their world.",
+    "rating": 9.5
+  },
+  {
+    "id": "Naruto",
+    "title": "Naruto",
+    "images": [
+      "images/naruto1.jpg",
+      "images/naruto2.jpg",
+      "images/naruto3.jpg",
+      "images/naruto4.jpg",
+      "images/naruto5.jpg"
+    ],
+    "description": "Naruto Uzumaki, a young ninja, dreams of becoming the Hokage and earning the respect of his village.",
+    "rating": 9.0
+  },
+  {
+    "id": "OnePiece",
+    "title": "One Piece",
+    "images": [
+      "images/onepiece1.jpg",
+      "images/onepiece2.jpg",
+      "images/onepiece3.jpg",
+      "images/onepiece4.jpg",
+      "images/onepiece5.jpg"
+    ],
+    "description": "Monkey D. Luffy sets out on a grand adventure to find the legendary treasure, One Piece, and become the King of the Pirates.",
+    "rating": 9.7
+  },
+  {
+    "id": "DemonSlayer",
+    "title": "Demon Slayer",
+    "images": [
+      "images/demonslayer1.jpg",
+      "images/demonslayer2.jpg",
+      "images/demonslayer3.jpg",
+      "images/demonslayer4.jpg",
+      "images/demonslayer5.jpg"
+    ],
+    "description": "Tanjiro Kamado embarks on a journey to save his sister and defeat the demons that threaten humanity.",
+    "rating": 8.9
+  },
+  {
+    "id": "JJK",
+    "title": "Jujutsu Kaisen",
+    "images": [
+      "images/jjk1.jpg",
+      "images/jjk2.jpg",
+      "images/jjk3.jpg",
+      "images/jjk4.jpg",
+      "images/jjk5.jpg"
+    ],
+    "description": "Yuji Itadori becomes involved in the world of Jujutsu Sorcerers after ingesting a powerful cursed object.",
+    "rating": 9.2
+  }
+]

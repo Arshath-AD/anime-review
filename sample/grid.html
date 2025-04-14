@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Grid Example</title>
+    <style>
+      /* General Reset */
+      body,
+      html {
+        margin: 0;
+        padding: 0px 7rem;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+      }
+
+      /* Grid Container */
+      .grid-container {
+        display: grid; /* Enables grid layout */
+        grid-template-columns: 1fr 2fr 1fr; /*3 equal columns */
+        grid-template-rows: auto; /* Rows adjust to content height */
+        gap: 10px; /* Spacing between grid items */
+        padding: 10px; /* Space around the grid */
+        background-color: #ff0000; /* Light background for visibility */
+        margin-top: 10rem;
+        width: 50rem;
+      }
+
+      /* Grid Items */
+      .grid-item {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text color */
+        text-align: center; /* Center text horizontally */
+        padding: 20px; /* Space inside the grid item */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 20px; /* Larger text */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </body>
+</html>

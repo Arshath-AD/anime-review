@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background: red;
+        height: 30rem;
+        width: 50rem;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: auto;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        margin-top: 4rem;
+        grid-template-areas:
+          "box1 box2 box3"
+          "box4 box5 box6";
+      }
+
+      .box {
+        background-color: blue;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: large;
+        font-weight: bold;
+        color: aliceblue;
+      }
+
+      .box1 {
+        grid-area: box1;
+      }
+      .box2 {
+        grid-area: box2;
+      }
+      .box3 {
+        grid-area: box3;
+      }
+      .box4 {
+        grid-area: box4;
+      }
+      .box5 {
+        grid-area: box5;
+      }
+      .box6 {
+        grid-area: box6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box b1">1</div>
+      <div class="box b2">2</div>
+      <div class="box b3">3</div>
+      <div class="box b4">4</div>
+      <div class="box b5">5</div>
+      <div class="box b6">6</div>
+    </div>
+  </body>
+</html>
+<div class="part-child-ARP">
+
+</div>
+<div class="part-child-ARP">
+
+</div>
+<div class="part-child-ARP">
+
+</div>
+<div class="part-child-ARP">
+
+</div>
