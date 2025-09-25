@@ -1,0 +1,57 @@
+**NOTE FOR MY FUTURE SELF**
+
+**Project:** Ore-Wa Nova - Anime Explorer
+
+This document summarizes the progress and potential improvements for your anime review website. Use it as a guide for your future development.
+
+---
+
+### **✅ What You've Accomplished So Far (Strengths)**
+
+You should be proud of this project. For a first professional website using only HTML, CSS, and vanilla JavaScript, this is an excellent achievement.
+
+* **Solid Structure:** You have successfully created a multi-page website with a clear purpose (`index.html` for a leaderboard, `home.html` for browsing, and `anime-pages.html` for reviews).
+* **Good UI/UX Foundations:** The dark theme is modern and visually appealing. You've also included user-friendly features like hover effects on clickable items, which makes the site feel interactive.
+* **Interactive Features:** You have successfully implemented several key JavaScript features from scratch:
+    * A functional Light/Dark mode theme switcher.
+    * A settings panel that appears and disappears on click.
+    * A randomized grid of suggestions that provides a fresh experience on page load.
+    * An image carousel/slider on the review page.
+* **Organized Code:** Your project is well-organized with separate folders and files for HTML, CSS, JavaScript, and data, which is a fundamental best practice in web development.
+
+---
+
+### **🔍 Areas for Improvement (Constructive Feedback)**
+
+Here are some areas you can focus on to take your skills and this project to the next level.
+
+**1. Design & Layout (CSS):**
+* **Mobile Responsiveness:** The current layout is designed for desktop screens and doesn't adapt well to smaller browser sizes or mobile devices.
+* **Font Consistency:** The project imports multiple fonts. Using a more consistent and limited font palette can create a more professional look.
+
+**2. Functionality & User Experience (JavaScript/HTML):**
+* **Incomplete Navigation:** Many links on the pages are placeholders (`<a href="#">`). A user can get stuck or not know how to navigate between all the pages easily.
+* **Static Content:** The anime review page is hardcoded with "Attack on Titan" content. Your JavaScript is set up to fetch data, but it's not fully utilized to make the page dynamic based on which anime the user clicks.
+* **Data Management:** You have a `data.json` file, but it's not being used to populate the home page or the review pages dynamically. Expanding this would make the site much more powerful.
+
+**3. Code Quality:**
+* **JavaScript Refinement:** There is some repeated code (e.g., the `cross()` function is defined twice in `app.js`). Functions could also benefit from comments explaining what they do.
+* **CSS Specificity:** You use a mix of classes and IDs for styling. Relying more on classes would make your CSS more reusable and easier to maintain.
+* **Image Paths:** Be careful with relative paths in your files (e.g., `../images/` vs `images/`). Inconsistent paths can lead to broken images as you move files around.
+
+---
+
+### **🚀 Actionable Next Steps**
+
+Here are the top two things you could work on next that will teach you the most:
+
+1.  **Implement Full Dynamic Content Loading:**
+    * Create a single, comprehensive `data.json` file that holds the information for *all* anime on your site.
+    * Modify your `home.js` to read this JSON file and dynamically create the anime cards for each category instead of having them hardcoded in the HTML.
+    * When a user clicks an anime card on the home page, pass its unique ID to the `anime-pages.html` URL (e.g., `anime-pages.html?id=attack-on-titan`).
+    * In `anime-page.js`, read the ID from the URL, find the correct anime in your JSON data, and dynamically fill in the title, description, and images.
+
+2.  **Learn and Apply CSS Media Queries for Responsiveness:**
+    * Research `@media` rules in CSS.
+    * Add styles that apply only when the screen width is below a certain size (e.g., `@media (max-width: 768px) { ... }`).
+    * Adjust your layouts for mobile. For example, your horizontal scrolling categories could become vertical stacks of items on a smaller screen.
