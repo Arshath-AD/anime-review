@@ -1,6 +1,6 @@
 # Ore-Wa Nova - Anime Explorer
 
-*Also if you run this in browser note this as i didnt completely finished AOT's review page alone will work you can click it and see review page if this website*
+*Also if you run this in browser note this, as i didnt completely finish the Project. Attack on titan's review page alone will work, you can click it and see the review page*
 
 Welcome to **Ore-Wa Nova**, an anime exploration and review website. 
 This project is a showcase of a dynamic and interactive front-end experience built purely with HTML, CSS, and vanilla JavaScript, without the use of external frameworks. 
