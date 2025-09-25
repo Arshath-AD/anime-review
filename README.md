@@ -2,6 +2,8 @@
 
 *Also if you run this in browser note this, as i didnt completely finish the Project. Attack on titan's review page alone will work, you can click it and see the review page*
 
+You can check the fully completed version of this project here -> https://github.com/Arshath-AD/animeReview-Django.git
+
 Welcome to **Ore-Wa Nova**, an anime exploration and review website. 
 This project is a showcase of a dynamic and interactive front-end experience built purely with HTML, CSS, and vanilla JavaScript, without the use of external frameworks. 
 It's designed for anime enthusiasts to discover new series, view top-rated lists, and get suggestions.
